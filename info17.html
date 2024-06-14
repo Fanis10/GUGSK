@@ -7,6 +7,8 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 	<title>Приоритетные направления дополнительного профессионального образования</title>
 </head>
 
@@ -82,15 +84,13 @@
 							</div>
 						</div>
 						<div class="info__title text48">Приоритетные направления дополнительного профессионального образования</div>
-						<div class="select custom_select">
-							<select>
-								<option disabled selected value="">Тип документа</option>
-								<option value="">1</option>
-								<option value="">2</option>
-								<option value="">3</option>
-								<option value="">4</option>
-							</select>
-						</div>
+						<select class="select2" data-placeholder="Тип документа">
+							<option value=""></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
 						<div class="info__cards">
 							<div class="info-card">
 								<div class="info-card__top">
@@ -196,6 +196,7 @@
 	</div>
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 </body>
 

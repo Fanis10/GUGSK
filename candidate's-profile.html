@@ -7,6 +7,8 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 	<title>Анкета кандидата на прохождение стажировки</title>
 </head>
 
@@ -111,13 +113,13 @@
 										<input type="text" placeholder="Ссылка на профиль вконтакте">
 									</div>
 									<div class="resume-editing__form-group mob-100">
-										<div class="resume-editing__select custom_select">
-											<select>
-												<option disabled selected value="">Выбор направления</option>
-												<option value="">1</option>
-												<option value="">2</option>
-											</select>
-										</div>
+										<select class="select2" data-placeholder="Выбор направления">
+											<option value=""></option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
 									</div>
 								</div>
 							</div>
@@ -141,10 +143,12 @@
 									</div>
 									<div class="resume-editing__form-group">
 										<div class="resume-editing__select custom_select">
-											<select>
-												<option disabled selected value="">Уровень получаемого образования</option>
-												<option value="">1</option>
-												<option value="">2</option>
+											<select class="select2" data-placeholder="Уровень получаемого образования">
+												<option value=""></option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
 											</select>
 										</div>
 									</div>
@@ -264,6 +268,7 @@
 
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 </body>
 

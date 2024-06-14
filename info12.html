@@ -7,6 +7,8 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 	<title>Формы документов, представляемые кандидатами для участия в конкурсе</title>
 </head>
 
@@ -82,13 +84,12 @@
 							</div>
 						</div>
 						<div class="info__title text48">Формы документов, представляемые кандидатами для участия в конкурсе</div>
-						<div class="select custom_select">
-							<select>
-								<option disabled selected value="">Формы</option>
-								<option value="">Формы для заполнения</option>
-								<option value="">Заявления для участия в конкурсах</option>
-							</select>
-						</div>
+						<select class="select2" data-placeholder="Формы">
+							<option value=""></option>
+							<option value="Формы для заполнения">Формы для заполнения</option>
+							<option value="Формы для заполнения">Формы для заполнения</option>
+							<option value="Заявления для участия в конкурсах">Заявления для участия в конкурсах</option>
+						</select>
 						<div class="info__cards">
 							<div class="info-card">
 								<div class="info-card__top">
@@ -233,6 +234,7 @@
 	</div>
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 </body>
 

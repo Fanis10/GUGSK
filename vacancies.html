@@ -7,6 +7,8 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 	<title>Вакансии</title>
 </head>
 
@@ -198,45 +200,39 @@
 												</i>
 											</div>
 											<div class="vacancies-main__filter-hidden item-hidden">
-												<div class="select custom_select">
-													<select>
-														<option disabled="" selected="" value="">Вакантная должность</option>
-														<option value="">1</option>
-														<option value="">2</option>
-														<option value="">3</option>
-														<option value="">4</option>
+												<div class="vacancies-main__filter-wrap">
+													<select class="vacancies-main__select select2" data-placeholder="Вакантная должность">
+														<option value=""></option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
 													</select>
-												</div>
-												<div class="select custom_select">
-													<select>
-														<option disabled="" selected="" value="">Орган исполнительной власти</option>
-														<option value="">1</option>
-														<option value="">2</option>
-														<option value="">3</option>
-														<option value="">4</option>
+													<select class="vacancies-main__select select2" data-placeholder="Орган исполнительной власти">
+														<option value=""></option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
 													</select>
-												</div>
-												<div class="select custom_select">
-													<select>
-														<option disabled="" selected="" value="">Прием документов</option>
-														<option value="">1</option>
-														<option value="">2</option>
-														<option value="">3</option>
-														<option value="">4</option>
+													<select class="vacancies-main__select select2" data-placeholder="Прием документов">
+														<option value=""></option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
 													</select>
-												</div>
-												<div class="select custom_select">
-													<select>
-														<option disabled="" selected="" value="">По дате</option>
-														<option value="">1</option>
-														<option value="">2</option>
-														<option value="">3</option>
-														<option value="">4</option>
+													<select class="vacancies-main__select select2" data-placeholder="По дате">
+														<option value=""></option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
 													</select>
+													<button class="vacancies-main__btn2">
+														<span>Распечатать список вакансий</span>
+													</button>
 												</div>
-												<button class="vacancies-main__btn2">
-													<span>Распечатать список вакансий</span>
-												</button>
 											</div>
 										</div>
 									</div>
@@ -577,6 +573,7 @@
 	</div>
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 </body>
 

@@ -7,6 +7,8 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 	<title>Целевое обучение 2</title>
 </head>
 
@@ -80,15 +82,13 @@
 						</div>
 						<div class="training__title text48">Целевое обучение</div>
 						<div class="training__top">
-							<div class="select custom_select">
-								<select>
-									<option disabled selected value="">Статус конкурса</option>
-									<option value="">1</option>
-									<option value="">2</option>
-									<option value="">3</option>
-									<option value="">4</option>
-								</select>
-							</div>
+							<select class="select2" data-placeholder="Статус конкурса">
+								<option value=""></option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
 							<div class="date">
 								<input id="date-input" type="text" placeholder="Дата начала приема документов">
 							</div>
@@ -213,6 +213,7 @@
 	</div>
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 </body>
 
